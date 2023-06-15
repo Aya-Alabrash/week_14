@@ -1,5 +1,12 @@
-def send_email(email, password, recipient, subject, message):
-    
+import requests
+from bs4 import BeautifulSoup
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email import encoders
+
+# Generate and send email with weather and COVID-19 information
+def send_email(email, password, recipient, subject, message): 
     gmail_user = email
     gmail_app_password = password
     
@@ -28,4 +35,8 @@ def send_email(email, password, recipient, subject, message):
         print('Email sent!')
         
     except Exception as exception:
+<<<<<<< HEAD
         print("Error: %s!\n\n" % exception)
+=======
+        print("Error: %s!\n\n" % exception)
+>>>>>>> master
