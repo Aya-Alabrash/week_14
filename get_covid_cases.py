@@ -8,9 +8,9 @@ def get_covid_cases(country):
     response = requests.get(api_url, headers={'X-Api-Key': 'API_KEY'})
   
     if response.status_code == requests.codes.ok:
-      data = response.json()
-      country_name = data[0]['country']
-      latest_cases = data[0]['cases']['2023-03-09']['total']
-      return f"COVID-19 latest cases in {country_name}: {latest_cases}\n"
+        data = response.json()
+        country_name = data[0]['country']
+        latest_cases = data[0]['cases']['2023-03-09']['total']
+        return f"COVID-19 latest cases in {country_name}: {latest_cases}\n"
     else:
-      print("Error:", response.status_code, response.text)
+        print("Error:", response.status_code, response.text)
