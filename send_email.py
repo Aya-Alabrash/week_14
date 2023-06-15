@@ -35,4 +35,8 @@ def send_email(email, password, recipient, subject, message):
         print('Email sent!')
         
     except Exception as exception:
+<<<<<<< HEAD
         print("Error: %s!\n\n" % exception)
+=======
+        print("Error: %s!\n\n" % exception)
+>>>>>>> master
