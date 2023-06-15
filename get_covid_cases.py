@@ -1,6 +1,6 @@
 import requests
-# Retrieve COVID-19 cases information
 
+# Retrieve COVID-19 cases information
 def get_covid_cases(country):
     api_url = 'https://api.api-ninjas.com/v1/covid19?country={}'.format(country)
     
